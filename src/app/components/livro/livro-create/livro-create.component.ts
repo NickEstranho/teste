@@ -21,7 +21,7 @@ export class LivroCreateComponent implements OnInit {
 
   ngOnInit(): void {
   }
-
+/*adfafafadff/*/
   salvar(){
     console.log(this.livro)
     this.livroService.post(this.livro).pipe(take(1)).subscribe({next: livro => this.handleResponseOk(livro),
@@ -43,4 +43,7 @@ export class LivroCreateComponent implements OnInit {
     this.router.navigate(["livro-index"])
   }
 
+  testar(){
+    
+  }
 }
